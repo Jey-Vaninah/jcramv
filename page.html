@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JCRAM'V</title>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+    <link rel="stylesheet" href="./CSS/destination.css" />
+    <link rel="stylesheet" href="./CSS/hotel.css" />
+    <link rel="stylesheet" href="./CSS/reservation.css" />
+    <script src="./JS/menuShow.js" defer></script>
+    <script src="./JS/index.js" defer></script>
+    <script src="./JS/headerScroll.js" defer></script>
+    <script src="./JS/incrementation.js" defer></script>
+    <script src="./JS/confimation.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <a href="#homeSection"
+          ><section class="logo">
+            <img src="./Ressources/logo.png" alt="logo" />
+            <h2>JCRAM'V</h2>
+          </section></a
+        >
+
+        <section class="desktopNav">
+          <a href="#homeSection">Home</a>
+          <a href="#aboutSection">About</a>
+          <a href="#destination">Destination</a>
+          <a href="#hotelSection">Hotel</a>
+          <a href="#reservation">Reservation</a>
+        </section>
+
+        <section class="mobilNav">
+          <div class="mobilMenu">|||</div>
+        </section>
+
+        <nav class="mobilNavLink">
+          <div>
+            <button id="removeButton">X</button>
+
+            <a href="#homeSection" class="lnk">Home</a>
+
+            <a href="#aboutSection" class="lnk">About</a>
+
+            <a href="#destination" class="lnk">Destination</a>
+
+            <a href="#hotelSection" class="lnk">Hotel</a>
+
+            <a href="#reservation" class="lnk">Reservation</a>
+          </div>
+        </nav>
+
+        <section class="headerCTA">
+          <button id="logOut">Sign out</button>
+        </section>
+      </header>
+
+      <section id="homeSection">
+        <div class="homeTitle">
+          <h1>Discover the best destinations in the world</h1>
+
+          <p>
+            Welcome to JCAMR'V, your first destination for discovering the most
+            breathtaking places on Earth. Wether you're seeking adventure or
+            relaxation, we have the perfect gataway for you.
+          </p>
+
+          <button>Get Started</button>
+        </div>
+
+        <div class="homeImage">
+          <div class="homeImage_container">
+            <img
+              src="./Ressources/girlTravel.png"
+              alt="girlTravel"
+              class="girlTravel"
+            />
+
+            <div>
+              <img src="./icons/star-svgrepo-com.svg" alt="star" />
+              <p>6.8</p>
+            </div>
+
+            <span>
+              <img src="./Ressources/bannerBefor.jpg" alt="beach" id="banner" />
+            </span>
+
+            <img
+              src="./Ressources/fleche-courbe.png"
+              alt="fleche-courbe"
+              class="fleche"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutSection">
+        <div class="grid">
+          <div>
+            <img src="./Ressources/about1.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./Ressources/about2.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./Ressources/about3.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./Ressources/about4.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>We Recommende a Beautiful place every month</h2>
+
+          <p>
+            At JCAMR'V, we strive to bring you the most stunning destinations
+            every month. From tropical paradises to hisoric landmarks, our
+            curated selections are sure to inspire you, next adventure
+          </p>
+
+          <button>Reservation</button>
+
+          <div class="increaseNumber">
+            <div class="countNumber">
+              <h2 id="firstCount">0%</h2>
+              <p>of satisfied customers recommend our services</p>
+            </div>
+
+            <div class="countNumber">
+              <h2 id="secondCount">0</h2>
+              <p>contries visited annually</p>
+            </div>
+
+            <div class="countNumber">
+              <h2 id="ThirdCount">0</h2>
+              <p>years of experience in the travel industry</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="destination">
+        <div class="destinationTitle">
+          <h2>Top Destination</h2>
+          <p>Explore our best destination</p>
+        </div>
+
+        <div class="destinationCard">
+          <div class="card">
+            <div class="cardImage">
+              <img
+                src="./Ressources/topdestination1.jpg"
+                alt="topdestination1"
+              />
+            </div>
+
+            <div class="cardContent">
+              <div class="cardTitle">
+                <div class="localisation">
+                  <h3>Poitiers</h3>
+
+                  <p>2 days 3 nights</p>
+                </div>
+
+                <div class="stars"></div>
+              </div>
+
+              <div class="cardIcons">
+                <div>
+                  <img src="./icons/plane-solid.svg" alt="" />
+
+                  <p>Plane</p>
+                </div>
+
+                <div>
+                  <img src="./icons/hotel-solid.svg" alt="" />
+
+                  <p>Hotel</p>
+                </div>
+
+                <div>
+                  <img src="./icons/car-solid.svg" alt="" />
+
+                  <p>Transfert</p>
+                </div>
+
+                <div>
+                  <img src="./icons/umbrella-beach-solid.svg" alt="" />
+
+                  <p>Activity</p>
+                </div>
+              </div>
+
+              <div class="cardPrice">
+                <div>
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                    />
+                  </svg>
+
+                  <p>98.90$ / person</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardImage">
+              <img
+                src="./Ressources/topdestination2.jpg"
+                alt="topdestination1"
+              />
+            </div>
+
+            <div class="cardContent">
+              <div class="cardTitle">
+                <div class="localisation">
+                  <h3>Spain</h3>
+
+                  <p>6 days 7 nights</p>
+                </div>
+
+                <div class="stars"></div>
+              </div>
+
+              <div class="cardIcons">
+                <div>
+                  <img src="./icons/plane-solid.svg" alt="" />
+
+                  <p>Plane</p>
+                </div>
+
+                <div>
+                  <img src="./icons/hotel-solid.svg" alt="" />
+
+                  <p>Hotel</p>
+                </div>
+
+                <div>
+                  <img src="./icons/car-solid.svg" alt="" />
+
+                  <p>Transfert</p>
+                </div>
+
+                <div>
+                  <img src="./icons/umbrella-beach-solid.svg" alt="" />
+
+                  <p>Activity</p>
+                </div>
+              </div>
+
+              <div class="cardPrice">
+                <div>
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                    />
+                  </svg>
+
+                  <p>98.90$ / person</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardImage">
+              <img
+                src="./Ressources/topdestination3.jpg"
+                alt="topdestination1"
+              />
+            </div>
+
+            <div class="cardContent">
+              <div class="cardTitle">
+                <div class="localisation">
+                  <h3>Kenya</h3>
+
+                  <p>8 days 9 nights</p>
+                </div>
+
+                <div class="stars"></div>
+              </div>
+
+              <div class="cardIcons">
+                <div>
+                  <img src="./icons/plane-solid.svg" alt="" />
+
+                  <p>Plane</p>
+                </div>
+
+                <div>
+                  <img src="./icons/hotel-solid.svg" alt="" />
+
+                  <p>Hotel</p>
+                </div>
+
+                <div>
+                  <img src="./icons/car-solid.svg" alt="" />
+
+                  <p>Transfert</p>
+                </div>
+
+                <div>
+                  <img src="./icons/umbrella-beach-solid.svg" alt="" />
+
+                  <p>Activity</p>
+                </div>
+              </div>
+
+              <div class="cardPrice">
+                <div>
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                    />
+                  </svg>
+
+                  <p>80$ / person</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardImage">
+              <img
+                src="./Ressources/topdestination4.jpg"
+                alt="topdestination1"
+              />
+            </div>
+
+            <div class="cardContent">
+              <div class="cardTitle">
+                <div class="localisation">
+                  <h3>Hallstatt</h3>
+
+                  <p>3 days 4 nights</p>
+                </div>
+
+                <div class="stars"></div>
+              </div>
+
+              <div class="cardIcons">
+                <div>
+                  <img src="./icons/plane-solid.svg" alt="" />
+
+                  <p>Plane</p>
+                </div>
+
+                <div>
+                  <img src="./icons/hotel-solid.svg" alt="" />
+
+                  <p>Hotel</p>
+                </div>
+
+                <div>
+                  <img src="./icons/car-solid.svg" alt="" />
+
+                  <p>Transfert</p>
+                </div>
+
+                <div>
+                  <img src="./icons/umbrella-beach-solid.svg" alt="" />
+
+                  <p>Activity</p>
+                </div>
+              </div>
+
+              <div class="cardPrice">
+                <div>
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                    />
+                  </svg>
+
+                  <p>108.90$ / person</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hotelSection">
+        <article class="hotelContainer">
+          <form class="hotelForm">
+            <div class="heading">
+              <h2>Life is short,<br />the world is wide</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                magni libero? Praesentium alias blanditiis eveniet delectus ea?
+              </p>
+            </div>
+
+            <h3>Here our Reservation</h3>
+
+            <div class="formContent">
+              <div>
+                <label for="location">Location</label>
+                <div class="inputContainer">
+                  <img src="./icons/paper-plane-solid.svg" alt="" />
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    placeholder="Where are you going"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="checkIn">Check in</label>
+                <div class="inputContainer">
+                  <img src="./icons/calendar-check-solid.svg" alt="" />
+                  <input type="date" name="checkIn" id="checkIn" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="checkOut">Check in</label>
+                <div class="inputContainer">
+                  <img src="./icons/calendar-check-solid.svg" alt="" />
+                  <input type="date" name="checkOut" id="checkOut" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="email">E-mail</label>
+                <div class="inputContainer">
+                  <img src="./icons/envelope-solid.svg" alt="" />
+                  <input type="text" name="email" id="email" required />
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" id="reservationButton">
+              make reservation
+            </button>
+          </form>
+
+          <div class="hotelImage"></div>
+        </article>
+
+        <span id="confirmation">
+          <svg viewBox="0 0 448 512">
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+            />
+          </svg>
+          <p>Reservation success</p>
+        </span>
+      </section>
+
+      <section id="reservation">
+        <div class="destinationTitle">
+          <h2>Our Hotel</h2>
+
+          <p>You can see there one of our hotel destination</p>
+        </div>
+
+        <div class="gallery">
+          <article>
+            <div class="hotel1"></div>
+
+            <div class="hotel2"></div>
+          </article>
+
+          <article></article>
+
+          <article>
+            <div class="hotel3"></div>
+
+            <div class="hotel4"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section class="media">
+        <div class="logoName">
+          <img src="./Ressources/logo.png" alt="logo" />
+          <div>
+            <h3>JCRAM'</h3>
+            <h3 class="orange">V</h3>
+          </div>
+        </div>
+
+        <p>
+          Explore the world with JCAMR'V and discover unforgettable experiences.
+          From the moment you arrive, we're dedicated to making your journey
+          extraordinary
+        </p>
+
+        <div class="social_media">
+          <a href="www.facebook.com">
+            <img src="./icons/facebook-f.svg" alt="facebook" />
+          </a>
+
+          <a href="www.whatsapp">
+            <img src="./icons/square-whatsapp.svg" alt="whatsapp" />
+          </a>
+
+          <a href="www.instagram">
+            <img src="./icons/instagram.svg" alt="instagram" />
+          </a>
+
+          <a href="www.linkedin">
+            <img src="./icons/linkedin-in.svg" alt="linkedin" />
+          </a>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contact US</h2>
+
+        <p>123 rue Radama Soavimasoandro</p>
+
+        <p>nomena@gmail.com</p>
+
+        <p>+261-32-45-567-67</p>
+      </section>
+
+      <section class="newPaper">
+        <form action="#">
+          <h2>Sign up to new paper</h2>
+
+          <div>
+            <input type="text" />
+            <button>Send</button>
+          </div>
+        </form>
+      </section>
+    </footer>
+
+    <div class="copyright">
+      <p>Design by JeanMarc RAJAONARIVELONA</p>
+    </div>
+  </body>
+</html>

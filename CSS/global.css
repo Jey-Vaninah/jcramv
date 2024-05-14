@@ -1,0 +1,46 @@
+@font-face {
+  font-family: quicksand;
+  src: url("../Font/Quicksand-VariableFont_wght.ttf");
+}
+
+:root {
+  --primary_color: #0d7cc6;
+  --secondary_color: #f68712;
+  --terty-color: #90c2e6;
+  --black: #010101;
+  --white: #f2f2f2;
+  --background: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: quicksand, sans-serif;
+}
+
+html,
+body {
+  height: fit-content;
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100vw;
+  height: fit-content;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: var(--black);
+  font-family: sans-serif;
+}

@@ -1,0 +1,150 @@
+#aboutSection {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+
+.grid {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.grid div {
+  width: 30%;
+  height: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.grid div:nth-of-type(2),
+.grid div:nth-of-type(3) {
+  width: 35%;
+  height: 45%;
+}
+
+.grid div img {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1.5);
+}
+
+.content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.content h2 {
+  width: 95%;
+  font-size: 2.3rem;
+}
+
+.content p {
+  width: 95%;
+  font-size: 20px;
+}
+
+.content button {
+  width: 200px;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #08588d;
+  color: var(--white);
+  font-size: 18px;
+  background-color: var(--primary_color);
+}
+
+.increaseNumber {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  gap: 3px;
+}
+
+.increaseNumber div:nth-child(2) {
+  width: 20%;
+}
+
+.countNumber {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.countNumber h2 {
+  text-align: center;
+}
+
+.countNumber p {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 502.5px) {
+  #aboutSection,
+  .grid,
+  .content {
+    width: fit-content;
+  }
+
+  #aboutSection {
+    height: 350vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    width: 100%;
+    height: 270vh;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .grid div,
+  .grid div:nth-child(2),
+  .grid div:nth-child(3) {
+    width: 80%;
+    height: 70%;
+    max-height: 75%;
+  }
+
+  .content {
+    height: 100vh;
+    padding-left: 15px;
+  }
+
+  .content button {
+    width: 120px;
+  }
+
+  .increaseNumber {
+    margin-top: 5vh;
+  }
+
+  .countNumber,
+  .increaseNumber div:nth-child(2) {
+    margin-bottom: -5vh;
+    width: 100%;
+    height: 100%;
+  }
+
+  .increaseNumber div:nth-child(1) p {
+    text-align: left;
+    width: 90%;
+    font-size: 16px;
+  }
+}

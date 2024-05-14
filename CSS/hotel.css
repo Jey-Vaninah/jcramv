@@ -1,0 +1,196 @@
+#hotelSection {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hotelContainer {
+  padding: 15px 20px;
+  width: 75vw;
+  height: 100%;
+  display: flex;
+  gap: 2%;
+  border-radius: 10px;
+  background-color: var(--terty-color);
+}
+
+.hotelForm {
+  width: 52%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotelImage {
+  width: 46%;
+  height: 100%;
+  border-radius: 10px;
+  background: url(../Ressources/reservation.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+
+.heading h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading p {
+  font-size: 18px;
+  line-height: 1.6rem;
+  font-weight: 100;
+}
+
+.hotelForm h3 {
+  font-size: 24px;
+}
+
+.formContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+}
+
+.formContent div {
+  width: calc(90%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContent label {
+  font-weight: 600;
+}
+
+.inputContainer {
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.inputContainer img {
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+.inputContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  padding-left: 38px;
+  font-size: 16px;
+}
+
+.hotelForm button {
+  height: 40px;
+  width: 80%;
+  margin: 15px auto 0;
+  background: var(--secondary_color);
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+span {
+  height: 7.5vh;
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: rgba(0, 170, 0, 0.802);
+  visibility: hidden;
+}
+
+span svg {
+  height: 40%;
+  fill: white;
+}
+
+@media screen and (max-width: 502.5px) {
+  #hotelSection {
+    height: fit-content;
+  }
+
+  .hotelContainer {
+    width: 95%;
+    padding: 10px 5px;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  .hotelForm {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .heading {
+    margin-bottom: 3vh;
+  }
+
+  .hotelForm h3 {
+    margin-bottom: 5vh;
+  }
+
+  .formContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContent div {
+    width: 98%;
+    height: 12vh;
+  }
+
+  .formContent label {
+    font-size: 1rem;
+  }
+  .inputContainer {
+    width: 100vw;
+  }
+
+  .inputContainer img {
+    height: 50%;
+  }
+
+  .inputContainer input {
+    padding-left: 13vw;
+  }
+
+  .hotelForm button {
+    width: 70%;
+    height: 60px;
+    margin-bottom: 8vh;
+  }
+
+  .hotelImage {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 5vh;
+  }
+
+  span {
+    width: 52vw;
+    height: 5vh;
+    bottom: 5px;
+    right: 25%;
+  }
+}
